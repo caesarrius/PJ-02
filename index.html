@@ -53,40 +53,32 @@
                 <div class="apartment-info">
                     <div class="ap-info">
                         <h3 class="title title3 yellow">City:</h3>
-                        <span class="white ap-sub">Rostov-on-Don<br>LCD admiral</span>
+                        <span class="white ap-sub city-info"></span>
                     </div>
                     <div class="ap-info">
                         <h3 class="title title3 yellow">Apartment area:</h3>
-                        <span class="white ap-sub">81 m2</span>
+                        <span class="white ap-sub area-info"></span>
                     </div>
                     <div class="ap-info">
                         <h3 class="title title3 yellow">Repair time:</h3>
-                        <span class="white ap-sub">3.5 months</span>
+                        <span class="white ap-sub repair-time-info"></span>
                     </div>
                     <div class="ap-info">
                         <h3 class="title title3 yellow">Repair Cost:</h3>
-                        <span class="white ap-sub">Upon request</span>
+                        <span class="white ap-sub repair-cost-info"></span>
                     </div>
                 </div>
-                <div class="ap-nav">
-                    <img src="images/left-arrow.svg">
-                    <div class="circles">
-                        <div class="circle circle1"></div>
-                        <div class="circle circle2"></div>
-                        <div class="circle circle3"></div>
-                    </div>
-                    <img src="images/right-arrow.svg">
+                <div class="ap-nav slider_arrows">
+                    <img class="slider_arrow left" src="images/left-arrow.svg">
+                    <div class="circles"></div>
+                    <img class="slider_arrow right" src="images/right-arrow.svg">
                 </div>
                 <div class="section2-ap_area">
-                    <ul class="section2-list">
-                        <li class="section2-list-item first-item"><a href="#">Rostov-on-Don, Admiral</a></li>
-                        <li class="section2-list-item"><a href="#">Sochi Thieves</a></li>
-                        <li class="section2-list-item"><a href="#">Rostov-on-Don Patriotic</a></li>
+                    <ul class="section2-list-items">
                     </ul>
-                    <div class="ap-photos">
-                        <img class="scnd-img" src="images/ap-img.jpg" alt="Rostov-on-Don, Admiral">
-                        <button class="button ap-button2 previous" type="button" name="previous"><img src="images/ap-button_left.svg"></button>
-                        <button class="button ap-button2 next" type="button" name="next"><img src="images/ap-button_right.svg"></button>
+                    <div class="ap-photos slider_images">
+                        <button class="button ap-button2 previous"><img src="images/ap-button_left.svg"></button>
+                        <button class="button ap-button2 next"><img src="images/ap-button_right.svg"></button>
                     </div>
                 </div>
             </div>
@@ -190,7 +182,6 @@
                     </div>
                 </div>
                 <div class="measurement">
-                    <img class="building" src="images/building-img.jpg">
                     <div class="measure-info">
                         <div class="measure-item">
                             <span class="item-number">01</span><p class="list-text">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>   
@@ -227,11 +218,12 @@
                             </label>
                         </div>
                         <button class="button button5" type="button" name="call">Call the measurer</button>
+                        <div class="pig-svg">
+                            <div class="pig-svg-img"><img src="images/pig.svg"></div>
+                            <span class="pig-text yellow">Help save 10 - 20% of the<br>cost of materials</span>
+                        </div>
                     </form>
-                </div>
-                <div class="pig-svg">
-                    <div class="pig-svg-img"><img src="images/pig.svg"></div>
-                    <span class="pig-text yellow">Help save 10 - 20% of the<br>cost of materials</span>
+                    
                 </div>
             </div>
         </section>
@@ -367,6 +359,7 @@
                 <button class="button button1" type="button" name="request">Request a call</button>
             </div>
         </footer>
+        <script src='slider.js' defer></script>
     </main>
 </body>
 </html>
