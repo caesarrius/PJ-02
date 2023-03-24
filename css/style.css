@@ -287,21 +287,46 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    max-width: 679px;
-    max-height: 482px;
+    align-self: flex-end;
+    width: 679px;
+    height: 482px;
 }
 
-.scnd-img {
-    display: flex;
-    z-index: 1;
+.slider_images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 679px;
+    height: 482px;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+  
+.slider_images .image.active {
+    opacity: 1;
 }
 
-.section2-list {
+.previous {
+    display: none;
+}
+
+.next{
+    display: none;
+}
+
+.section2-list-items {
     display: flex;
     flex-direction: row;
-    margin-right: 60.5px;
     margin-bottom: 45px;
+    padding: 0px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.section2-list-item{
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 60.5px;
     padding: 0px;
     justify-content: space-between;
     font-family: 'Yeseva One';
@@ -309,20 +334,13 @@ body * {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    text-transform: uppercase;
-    list-style: none;
+    cursor: pointer;
 }
 
-.section2-list-item a {
-    color: rgba(255, 255, 255, 0.3); 
-    text-decoration: none;
-}
-
-.section2-list-item:first-child a {
+.section2-list-item:hover, .section2-list-item.active {
     color:#E3B873;
     padding-bottom: 7.68px;
     border-bottom: solid 1px #E3B873;
-    text-decoration: none;
 }
 
 .section2-info {
@@ -375,6 +393,7 @@ body * {
 
 .ap-sub {
     font-size: 13px;
+    word-break: break-all;
 }
 
 .ap-nav {
@@ -390,26 +409,25 @@ body * {
     margin-left: 29.5px;
     margin-right: 29.5px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .circle {
     height: 9.57px;
     width: 9.57px;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 17.54px;
 }
 
-.circle1 {
+.circle:hover, .circle.active{
+    cursor: pointer;
     background-color: #FFFFFF;
-    margin-right: 17.54px;
 }
 
-.circle2 {
-   background-color: rgba(255, 255, 255, 0.3); 
-}
 
-.circle3{
-    background-color: rgba(255, 255, 255, 0.3); 
-    margin-left: 17.54px;
+.slider_arrow {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1299px) {
